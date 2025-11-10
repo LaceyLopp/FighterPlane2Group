@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9014237873057940210}
   - component: {fileID: 5924847881444345739}
   - component: {fileID: 8523853058984520731}
+  - component: {fileID: 2073436867653489350}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -267,5 +268,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   lives: 0
-  bulletPrefab: {fileID: 0}
-  explosionPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 8568965665149658710, guid: b1eed6253aa069845b0edf3f90db799d, type: 3}
+  explosionPrefab: {fileID: 1886710396827344234, guid: e8e63456aa1d9d240ab38a0453e59388, type: 3}
+--- !u!114 &2073436867653489350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6465214131589529892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d11ef376721ab64ead5651ccec673bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameronPlayerController
+  lives: 0
+  bulletPrefab: {fileID: 8568965665149658710, guid: b1eed6253aa069845b0edf3f90db799d, type: 3}
+  explosionPrefab: {fileID: 1886710396827344234, guid: e8e63456aa1d9d240ab38a0453e59388, type: 3}
