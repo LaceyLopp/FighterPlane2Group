@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         CreateSky();
         InvokeRepeating("CreateEnemy", 1, 3);
         InvokeRepeating("CreateEnemyTwo", 6, 2);
+        InvokeRepeating("CreateEnemyThree", 10, 4);
     }
 
     // Update is called once per frame
@@ -50,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     void CreateEnemyThree()
     {
-        Instantiate(enemyThreePrefab, new Vector3(Random.Range(-horizontalScreenSize, horizontalScreenSize) * 0.3f, verticalScreenSize, 0), Quaternion.Euler(180, 0, 0));
+        Instantiate(enemyThreePrefab, new Vector3(Random.Range(-horizontalScreenSize, horizontalScreenSize) * 0.9f, verticalScreenSize, 0), Quaternion.Euler(180, 0, Random.Range(-30, -20)));
     }
 
     void CreateSky()
