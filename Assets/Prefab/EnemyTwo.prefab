@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5445207517995363052}
   - component: {fileID: 9103160501673589842}
   - component: {fileID: -2130264679931181863}
-  - component: {fileID: 5525374785861565715}
+  - component: {fileID: 1985907491789971736}
   m_Layer: 0
   m_Name: EnemyTwo
   m_TagString: Untagged
@@ -181,7 +181,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5525374785861565715
+--- !u!114 &1985907491789971736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6040813143410752357}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 851f85f72d47375489455dd640f65e4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ed70b92885deda43a25c386d6b3788d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RandallEnemyTwo
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
   explosionPrefab: {fileID: 1886710396827344234, guid: e8e63456aa1d9d240ab38a0453e59388, type: 3}
