@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     
     private GameManager gameManager;
 
+    public int scoreSet;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(whatDidIHit.gameObject);
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-            gameManager.AddScore(5);
+            gameManager.AddScore(scoreSet);
             Destroy(this.gameObject);
         }
     }
