@@ -37,5 +37,13 @@ public class Enemy : MonoBehaviour
             gameManager.AddScore(scoreSet);
             Destroy(this.gameObject);
         }
+        /*
+        else if(whatDidIHit.tag == "Powerup)
+        {
+            shieldPrefab.SetActive(false);
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+        }
+        */
     }
 }
