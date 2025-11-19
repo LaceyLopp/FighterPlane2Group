@@ -7,7 +7,7 @@ public class GainALife : MonoBehaviour
 
     private GameManager gameManager;
 
-    public int gainALife = 1;
+    public int GainALife = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,7 @@ public class GainALife : MonoBehaviour
 
 
 
-            gameManager.GainALife(gainAlife);
+            gameManager.GainALife();
             Destroy(this.gameObject);
         }
 
