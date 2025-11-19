@@ -44,12 +44,6 @@ public class CameronPlayerController : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    public void GainALife()
-    {
-        //lives = lives + 1;
-        //lives += 1;
-        lives++;
-        gameManger.ChangeLivesText(lives);
 
     void Shooting()
     {
