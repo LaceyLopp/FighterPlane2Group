@@ -46,7 +46,7 @@ public class CameronPlayerController : MonoBehaviour
         }
     }
 
-    /*
+    //
     private void OnTriggerEnter2D(Collider2D whatDidIHit)
     {
         if(whatDidIHit.tag == "Powerup")
@@ -59,7 +59,7 @@ public class CameronPlayerController : MonoBehaviour
             //gameManager.PlaySound(1);
         }
     }
-    */
+    //
     void Shooting()
     {
         if(Input.GetKeyDown(KeyCode.Space))

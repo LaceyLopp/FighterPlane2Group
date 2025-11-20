@@ -42,7 +42,16 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*
+        if (powerupPrefab.SetActive() == true)
+        {
+            CreateShield();
+            //followPlayer(true);
+        } else if (powerupPrefab.SetActive() == false)
+        {
+            //followPlayer(false);
+        }
+        */
     }
 
     void CreateEnemy()

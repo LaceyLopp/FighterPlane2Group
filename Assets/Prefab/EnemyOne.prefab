@@ -194,4 +194,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 1886710396827344234, guid: e8e63456aa1d9d240ab38a0453e59388, type: 3}
+  shieldPrefab: {fileID: 179732491595612527, guid: 31cd0fcaf8799654dba9a66a16829056, type: 3}
   scoreSet: 1
