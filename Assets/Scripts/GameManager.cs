@@ -36,22 +36,13 @@ public class GameManager : MonoBehaviour
         InvokeRepeating("CreateEnemyTwo", 6, 2);
         InvokeRepeating("CreateEnemyThree", 10, 4);
         InvokeRepeating("CreateCoin", 1, 3.5f);
-        InvokeRepeating("CreatePowerup", 4, 6);
+        InvokeRepeating("CreatePowerup", 6, 8);
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (powerupPrefab.SetActive() == true)
-        {
-            CreateShield();
-            //followPlayer(true);
-        } else if (powerupPrefab.SetActive() == false)
-        {
-            //followPlayer(false);
-        }
-        */
+
     }
 
     void CreateEnemy()

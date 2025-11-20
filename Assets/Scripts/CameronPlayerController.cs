@@ -54,7 +54,8 @@ public class CameronPlayerController : MonoBehaviour
             Destroy(whatDidIHit.gameObject);
             //shield activate
             shieldPrefab.SetActive(true);
-            
+
+            //depending on how we implement text and sounds, this may not be used:
             //gameManager.ManagePowerupText(3);
             //gameManager.PlaySound(1);
         }

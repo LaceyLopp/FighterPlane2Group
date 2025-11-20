@@ -290,7 +290,7 @@ MonoBehaviour:
   enemyThreePrefab: {fileID: 6040813143410752357, guid: cdb3ed4b970325040b1e213b086bad6d, type: 3}
   cloudPrefab: {fileID: 8901978872678414076, guid: 14dd4fa52784c904e83c0650f3eea560, type: 3}
   coinPrefab: {fileID: 8729755512266785908, guid: 92b0a1a78a2cba94a8edce3630a5edcb, type: 3}
-  powerupPrefab: {fileID: 5698978415742548908, guid: 9f6b72baa3e7f4741a695691e1126085, type: 3}
+  powerupPrefab: {fileID: 3673422051214591943, guid: 4786badc9ecf53e4387b7bf65b8fb395, type: 3}
   livesText: {fileID: 999943548}
   scoreText: {fileID: 148941791}
   horizontalScreenSize: 0
