@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
 
     public GameObject explosionPrefab;
+    public GameObject shieldPrefab;
     
     private GameManager gameManager;
 
@@ -37,5 +38,14 @@ public class Enemy : MonoBehaviour
             gameManager.AddScore(scoreSet);
             Destroy(this.gameObject);
         }
+        //
+        else if(whatDidIHit.tag == "ShieldPowerup")
+        {
+            whatDidIHit.gameObject.SetActive(false);
+            Debug.Log("Shield prefab inactive");
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+        }
+        //
     }
 }

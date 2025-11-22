@@ -15,6 +15,7 @@ public class CameronPlayerController : MonoBehaviour
 
     public GameObject bulletPrefab;
     public GameObject explosionPrefab;
+    public GameObject shieldPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class CameronPlayerController : MonoBehaviour
         lives = 3;
         speed = 5.0f;
         gameManager.ChangeLivesText(lives);
+        shieldPrefab.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,8 +36,7 @@ public class CameronPlayerController : MonoBehaviour
 
     public void LoseALife()
     {
-        //lives = lives - 1;
-        //lives -= 1;
+        //if you have a shield first, lose the shield first and have no life decrease
         lives--;
         gameManager.ChangeLivesText(lives);
         if (lives == 0)
@@ -45,6 +46,21 @@ public class CameronPlayerController : MonoBehaviour
         }
     }
 
+    //
+    private void OnTriggerEnter2D(Collider2D whatDidIHit)
+    {
+        if(whatDidIHit.tag == "Powerup")
+        {
+            Destroy(whatDidIHit.gameObject);
+            //shield activate
+            shieldPrefab.SetActive(true);
+
+            //depending on how we implement text and sounds, this may not be used:
+            //gameManager.ManagePowerupText(3);
+            //gameManager.PlaySound(1);
+        }
+    }
+    //
     void Shooting()
     {
         if(Input.GetKeyDown(KeyCode.Space))
