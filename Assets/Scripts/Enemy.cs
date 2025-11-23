@@ -11,11 +11,15 @@ public class Enemy : MonoBehaviour
     private GameManager gameManager;
 
     public int scoreSet;
+    public AudioSource powerDownSound;
+
 
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        AudioSource[] sources = GameObject.Find("GameManager").GetComponents<AudioSource>();
+        powerDownSound = sources[1];
     }
 
     // Update is called once per frame
@@ -42,6 +46,7 @@ public class Enemy : MonoBehaviour
         else if(whatDidIHit.tag == "ShieldPowerup")
         {
             whatDidIHit.gameObject.SetActive(false);
+            powerDownSound.Play();
             Debug.Log("Shield prefab inactive");
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             Destroy(this.gameObject);

@@ -16,11 +16,16 @@ public class CameronPlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject explosionPrefab;
     public GameObject shieldPrefab;
+    public AudioSource powerUpSound;
+    public AudioSource powerDownSound;
+
 
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        powerUpSound = GameObject.Find("GameManager").GetComponent<AudioSource>();
+        powerDownSound = GameObject.Find("GameManager").GetComponent<AudioSource>();
         lives = 3;
         speed = 5.0f;
         gameManager.ChangeLivesText(lives);
@@ -57,7 +62,7 @@ public class CameronPlayerController : MonoBehaviour
 
             //depending on how we implement text and sounds, this may not be used:
             //gameManager.ManagePowerupText(3);
-            //gameManager.PlaySound(1);
+            powerUpSound.Play();
         }
     }
     //
