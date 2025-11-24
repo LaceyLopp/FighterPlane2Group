@@ -17,7 +17,7 @@ public class CameronPlayerController : MonoBehaviour
     public GameObject explosionPrefab;
     public GameObject shieldPrefab;
     public AudioSource powerUpSound;
-    public AudioSource powerDownSound;
+    
 
 
     // Start is called before the first frame update
@@ -25,7 +25,6 @@ public class CameronPlayerController : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         powerUpSound = GameObject.Find("GameManager").GetComponent<AudioSource>();
-        powerDownSound = GameObject.Find("GameManager").GetComponent<AudioSource>();
         lives = 3;
         speed = 5.0f;
         gameManager.ChangeLivesText(lives);
