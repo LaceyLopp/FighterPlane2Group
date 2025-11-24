@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
 
     void CreateEnemyThree()
     {
-        Instantiate(enemyThreePrefab, new Vector3(Random.Range(-horizontalScreenSize, horizontalScreenSize) * 0.9f, verticalScreenSize, 0), Quaternion.Euler(180, 0, Random.Range(-30, -20)));
+        Instantiate(enemyThreePrefab, new Vector3(Random.Range(-horizontalScreenSize, horizontalScreenSize*0.7f) * 0.9f, verticalScreenSize, 0), Quaternion.Euler(180, 0, Random.Range(-30, -5)));
     }
 
     void CreateCoin()
